@@ -1,0 +1,107 @@
+
+.center_serv{
+background-image: url(https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/tech.gif?alt=media&token=737fcbe2-4b2b-4045-ba2c-4109fc411bb2);
+background-position: center; 
+ }
+
+#serv_pg{
+padding-top:40px;
+padding-bottom:40px;
+background:#f4f4f4; 
+ }
+.serv_pg1i h6 i{
+margin-left:5px; 
+ }
+.serv_pg1i span{
+font-size:70px;
+line-height:0;
+ }
+.serv_pg1i{
+padding:30px 20px;
+border-radius:5px; 
+ }
+.serv_pg1i:hover{
+background-color: #083355!important;
+color:#fff;
+ }
+.serv_pg1i:hover h6 a{
+color:#fff!important;
+ }
+.serv_pg1i:hover span i{
+color:#fff!important;
+ }
+#pricing{
+background:#f4f4f4;
+padding-bottom:40px; 
+ }
+.pricing_1i h1 span{
+font-size:18px; 
+ }
+.pricing_1i h6 i{
+margin-right:5px;
+font-size:22px;
+vertical-align:middle;
+ }
+.pricing_1i{
+padding:40px 30px; 
+ }
+.pricing_1io{
+background:#996e17;
+color:#fff; 
+ }
+#overview{
+padding-top:40px;
+padding-bottom:40px; 
+ }
+.overview_1l h5 i{
+ margin-right:10px;
+ vertical-align:middle;
+ }
+#testim{
+padding-top:40px;
+ }
+/*********************service_end****************/
+
+
+
+@media screen and (max-width : 767px){
+.overview_1l h2{
+text-align:center; 
+ }
+.overview_1l h6{
+text-align:center;
+ }
+.overview_1l{
+margin-bottom:15px; 
+ }
+.team_h1  p{
+text-align:left; 
+ }
+.serv_pg1i {
+text-align:center; 
+ }
+.serv_pg1i p{
+text-align:left; 
+ }
+.serv_pg1i{
+margin-bottom:15px;  
+ }
+.pricing_1i {
+text-align:center;
+margin-bottom:15px; 
+ }
+ }
+@media (min-width:768px) and (max-width:991px) {
+.overview_1r img{
+min-height:400px; 
+ }
+.team_h1  p br{
+display:none; 
+ }
+.serv_pg1i  h4{
+font-size:18px; 
+ }
+ }
+@media (min-width:992px) and (max-width:1200px) {
+
+ }

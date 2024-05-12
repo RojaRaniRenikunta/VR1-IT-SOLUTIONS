@@ -1,0 +1,26 @@
+
+.center_gal{
+background-image: url(https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/GALERY.jpg?alt=media&token=7d8349f7-4dab-4ce2-ae1e-ddd7c540734f);
+background-position: center; 
+ }
+
+#gal_pg{
+padding-top:40px;
+padding-bottom:40px; 
+ }
+#gal_pg .modal-dialog {
+ max-width: 800px;
+}
+/*********************contact_end****************/
+
+@media screen and (max-width : 767px){
+.gallery_1i{
+margin-bottom:10px; 
+ }
+ }
+@media (min-width:768px) and (max-width:991px) {
+
+ }
+@media (min-width:992px) and (max-width:1200px) {
+
+ }

@@ -1,0 +1,133 @@
+.hm-gradient {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+.darken-grey-text {
+    color: #2E2E2E;
+}
+
+.center_ser{
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/career.gif?alt=media&token=190d22b2-ad3b-43f9-a2e4-17c5f5d91a37);
+    background-position: center; 
+     }
+    
+
+ .center_server{
+      background-image: url(https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/car.jpg?alt=media&token=d8bd4674-b203-4199-89e1-1a70f7dcf35b);
+      background-position: center; 
+       }
+
+
+/*********************spec****************/
+.spec_1i1{
+padding:40px 20px; 
+background:#083355;
+min-height:230px;
+ }
+ .spec_1i1 h4{
+    color: #fff;
+ }
+.spec_1i1 span{
+font-size:60px;
+color: #fff;
+ }
+.spec_1i2{
+padding:60px 20px; 
+background:#fff;
+top:0;
+display:none;
+ }
+.spec_1i:hover .spec_1i2{
+display:block;
+cursor:pointer; 
+ }
+ 
+.spec_1i1o{
+background:#083355;
+ }
+.spec_1i2{
+background:#e7b343;
+color: #000;
+ }
+#spec{
+margin-top:-70px; 
+ }
+/*********************spec_end****************/
+
+
+.foc{
+   background-image: linear-gradient(rgba(3, 3, 3, 0.651), rgba(0, 0, 0, 0.751)),url(../image/15184.jpg) ;
+   
+   
+   background-attachment: fixed;
+
+}
+
+
+.buttonbtn{
+    background: hsla(206, 83%, 18%, 1);
+  
+    background: linear-gradient(225deg, hsla(206, 83%, 18%, 1) 0%, hsla(206, 83%, 18%, 1) 7%, hsla(190, 100%, 50%, 1) 100%);
+    
+    background: -moz-linear-gradient(225deg, hsla(206, 83%, 18%, 1) 0%, hsla(206, 83%, 18%, 1) 7%, hsla(190, 100%, 50%, 1) 100%);
+    
+    background: -webkit-linear-gradient(225deg, hsla(206, 83%, 18%, 1) 0%, hsla(206, 83%, 18%, 1) 7%, hsla(190, 100%, 50%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#083354", endColorstr="#083355", GradientType=1 );
+  color:#fff!important;
+  padding: 12px 24px;
+  border-radius:5px;
+  display:inline-block;
+   }
+  .buttonbtn:hover{
+    background: hsla(206, 83%, 18%, 1);
+  
+  background: linear-gradient(315deg, hsla(206, 83%, 18%, 1) 11%, hsla(206, 83%, 18%, 1) 11%, hsla(190, 100%, 50%, 1) 100%);
+  
+  background: -moz-linear-gradient(315deg, hsla(206, 83%, 18%, 1) 11%, hsla(206, 83%, 18%, 1) 11%, hsla(190, 100%, 50%, 1) 100%);
+  
+  background: -webkit-linear-gradient(315deg, hsla(206, 83%, 18%, 1) 11%, hsla(206, 83%, 18%, 1) 11%, hsla(190, 100%, 50%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#083355", endColorstr="#083354", GradientType=1 );
+  
+    color:#fff!important;
+   }
+    
+
+   
+/*********************contact_h****************/
+#contact_h{
+    padding-bottom:40px; 
+     }
+    .contact_h1i .form-control{
+    height:50px;
+    border-color:#1a96fc2e ; 
+    color:#1b1d21;
+     }
+    .contact_h1i ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #1b1d21;
+    opacity: 1; /* Firefox */
+    }
+    .contact_h1i .form_1{
+    height:150px
+     }
+    .contact_h1{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto; 
+     }
+    /*********************contact_h_end****************/
+
+    .point-list {
+      list-style-type: none;
+      padding-left: 20px;
+      
+      font-weight: normal;
+    }
+    .point-list li::before {
+      content: "\2022"; /* Unicode character for bullet point */
+      color: #000; /* Change color if needed */
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+

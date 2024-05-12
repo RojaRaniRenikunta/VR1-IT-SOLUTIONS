@@ -1,0 +1,55 @@
+
+.center_conc{
+background-image: url(https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/contact.gif?alt=media&token=020e3397-2b79-49ce-aa72-17bf4d2f0be8);
+background-position: center; 
+ }
+
+#contact{
+padding-top:40px;
+padding-bottom:40px; 
+ }
+.quote_2l .form-control {
+background: none;
+height: 50px;
+font-size: 16px;
+border-radius: 0;
+border-color:#1a96fc2e;
+}
+.contact_2rl span{
+font-size:40px;
+line-height:0; 
+ }
+.contact_2rr p{
+margin-top:8px; 
+ }
+.contact_2{
+margin-top:30px; 
+ }
+/*********************contact_end****************/
+
+@media screen and (max-width : 767px){
+.quote_2l .form-control{
+margin-top:10px; 
+ }
+.contact_2{
+text-align:center;
+ }
+.contact_2r{
+ margin-top:15px;
+ }
+.contact_2rr{
+margin-top:10px; 
+ }
+.contact_2rr hr{
+margin-left:auto;
+margin-right:auto;
+ }
+ }
+@media (min-width:768px) and (max-width:991px) {
+.contact_2rr p{
+font-size:14px; 
+ }
+ }
+@media (min-width:992px) and (max-width:1200px) {
+
+ }
