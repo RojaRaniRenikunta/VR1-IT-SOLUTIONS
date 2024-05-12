@@ -19,10 +19,10 @@ function Footer() {
                             <h3><a className="text-white" href="index.html"><img src={footerimg1} alt="" style={{ width: '210px', height: '95px', marginBottom: '-31px', marginTop: '-25px' }} /></a></h3>
                             <p className="text-light font_14 mt-3">VR1 IT Solutions is a leading provider of comprehensive IT services, specializing in virtual reality solutions tailored to meet the diverse needs of modern businesses. With a focus on innovation and cutting-edge technology, we deliver scalable and customized VR solutions that drive growth and efficiency.</p>
                             <ul className="social-network social-circle mb-0 mt-3">
-                                <li><a href="https://www.youtube.com/channel/UCChiisX-fvACE6g1CAhssSA" className="icoTwitter" title="Rss"><FontAwesomeIcon className='i' icon={faYoutube} /></a></li>
-                                <li><a href="https://www.facebook.com/profile.php?id=61557161950708&mibextid=rS40aB7S9Ucbxw6v" className="icoFacebook" title="Facebook"><FontAwesomeIcon className='i' icon={faFacebook} /></a></li>
-                                <li><a href="https://www.instagram.com/vr1_it_solutions?igsh=MW95cmxybXd1ejN5Yg==" className="icoRss" title="Twitter"><FontAwesomeIcon className='i' icon={faInstagram} /></a></li>
-                                <li><a href="https://www.linkedin.com/company/vr1-it-solutions/" className="icoLinkedin" title="Linkedin"><FontAwesomeIcon className='i' icon={faLinkedin} /></a></li>
+                                <li style={{backgroundColor:'#e1a730',marginLeft:'5px',width:'40px',height:'40px',borderRadius:'5px',fontSize:'20px'}}><a href="https://www.youtube.com/channel/UCChiisX-fvACE6g1CAhssSA" className="icoTwitter" title="Rss"><FontAwesomeIcon className='i' icon={faYoutube} /></a></li>
+                                <li style={{backgroundColor:'#e1a730',marginLeft:'5px',width:'40px',height:'40px',borderRadius:'5px',fontSize:'20px'}}><a href="https://www.facebook.com/profile.php?id=61557161950708&mibextid=rS40aB7S9Ucbxw6v" className="icoFacebook" title="Facebook"><FontAwesomeIcon className='i' icon={faFacebook} /></a></li>
+                                <li style={{backgroundColor:'#e1a730',marginLeft:'5px',width:'40px',height:'40px',borderRadius:'5px',fontSize:'20px'}}><a href="https://www.instagram.com/vr1_it_solutions?igsh=MW95cmxybXd1ejN5Yg==" className="icoRss" title="Twitter"><FontAwesomeIcon className='i' icon={faInstagram} /></a></li>
+                                <li style={{backgroundColor:'#e1a730',marginLeft:'5px',width:'40px',height:'40px',borderRadius:'5px',fontSize:'20px'}}><a href="https://www.linkedin.com/company/vr1-it-solutions/" className="icoLinkedin" title="Linkedin"><FontAwesomeIcon className='i' icon={faLinkedin} /></a></li>
                             </ul>
                         </div>
                     </div>

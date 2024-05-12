@@ -332,13 +332,10 @@ function Blog() {
                                     <h4>Follow Us</h4>
                                     <hr className="hr_line mb-4" />
                                     <ul className="social-network social-circle mb-0 mt-3">
-                                        <li><a href="https://www.youtube.com/channel/UCChiisX-fvACE6g1CAhssSA" class="icoTwitter" title="Rss"><FaYoutube />
-
-                                        </a></li>
-                                        <li><a href="https://www.facebook.com/profile.php?id=61557161950708&mibextid=rS40aB7S9Ucbxw6v" class="icoFacebook" title="Facebook"><FaFacebook />
-                                        </a></li>
-                                        <li><a href="https://www.instagram.com/vr1_it_solutions?igsh=MW95cmxybXd1ejN5Yg==" class="icoRss" title="Twitter"><FaInstagram /></a></li>
-                                        <li><a href="https://www.linkedin.com/company/vr1-it-solutions/" class="icoLinkedin" title="Linkedin"><FaLinkedin /></a></li>
+                                        <li style={{marginLeft:'5px'}}><a style={{color:'white'}} href="https://www.youtube.com/channel/UCChiisX-fvACE6g1CAhssSA" class="icoTwitter" title="Rss"><FaYoutube  style={{marginTop:'10px'}}/></a></li>
+                                        <li style={{marginLeft:'5px'}}><a style={{color:'white'}} href="https://www.facebook.com/profile.php?id=61557161950708&mibextid=rS40aB7S9Ucbxw6v" class="icoFacebook" title="Facebook"><FaFacebook style={{marginTop:'10px'}}/></a></li>
+                                        <li style={{marginLeft:'5px'}}><a style={{color:'white'}} href="https://www.instagram.com/vr1_it_solutions?igsh=MW95cmxybXd1ejN5Yg==" class="icoRss" title="Twitter"><FaInstagram style={{marginTop:'10px'}}/></a></li>
+                                        <li style={{marginLeft:'5px'}}><a style={{color:'white'}} href="https://www.linkedin.com/company/vr1-it-solutions/" class="icoLinkedin" title="Linkedin"><FaLinkedin style={{marginTop:'10px'}}/></a></li>
                                     </ul>
                                 </div>
                             </div>

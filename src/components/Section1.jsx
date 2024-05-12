@@ -3,6 +3,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptop, faUsers, faGlobe, faLightbulb, faUserPlus, faSignal, faStar, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import { FaChevronCircleRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import sectionimg1 from '../Images/Section/about.png'
+import sectionimg2 from '../Images/Section/img1.png'
+import sectionimg3 from '../Images/Section/img2.png'
+import sectionimg4 from '../Images/Section/img3.png'
+import sectionimg5 from '../Images/Section/img4.png'
+import sectionimg6 from '../Images/Section/img5.png'
+import sectionimg7 from '../Images/Section/img6.png'
+import sectionimg8 from '../Images/Section/img7.png'
+import sectionimg9 from '../Images/Section/img8.png'
+import sectionimg10 from '../Images/Section/img9.png'
+import sectionimg11 from '../Images/Section/img10.png'
+import sectionimg12 from '../Images/Section/img11.png'
+import sectionimg13 from '../Images/Section/img12.png'
+import sectionimg14 from '../Images/Section/img13.png'
+import sectionimg15 from '../Images/Section/img14.jpeg'
+import sectionimg16 from '../Images/Section/img15.jpeg'
+import sectionimg17 from '../Images/Section/img16.png'
+import sectionimg18 from '../Images/Section/img17.png'
+import sectionimg19 from '../Images/Section/img18.png'
+import sectionimg20 from '../Images/Section/img19.png'
+import sectionimg21 from '../Images/Section/img20.png'
+import sectionimg22 from '../Images/Section/img21.png'
+
 function Section1() {
     useEffect(() => {
         $(document).ready(function () {
@@ -52,7 +76,26 @@ function Section1() {
         });
     }, []); // empty dependency array ensures this effect runs only once, similar to componentDidMount()
 
-
+    useEffect(() => {
+        const nums = document.querySelectorAll('.num');
+    
+        nums.forEach((num) => {
+          const targetVal = +num.getAttribute('data-val');
+          const updateInterval = 1000; // Adjust update interval as needed
+    
+          let currentVal = 0;
+          const updateCount = () => {
+            const increment = targetVal / (updateInterval / 1000); // Increment value per second
+            currentVal = Math.min(currentVal + increment, targetVal);
+            num.textContent = Math.round(currentVal).toLocaleString(); // Format number with commas
+            if (currentVal < targetVal) {
+              requestAnimationFrame(updateCount);
+            }
+          };
+    
+          updateCount();
+        });
+      }, []);
     return (
         <>
         <Link to={`/index.html`}>
@@ -166,7 +209,7 @@ function Section1() {
                                 <div className="about_h1l clearfix">
                                     <div className="grid">
                                         <figure className="effect-jazz mb-0">
-                                            <img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/about.png?alt=media&token=41364a07-dc74-4e92-a567-2ab9a3f7baf7" className="w-100" alt="abc" style={{ cursor: 'default' }} />
+                                            <img src={sectionimg1} className="w-100" alt="abc" style={{ cursor: 'default' }} />
                                         </figure>
                                     </div>
                                 </div>
@@ -205,7 +248,7 @@ function Section1() {
 
             {/* --------------------------------------------- */}
             <section>
-                <div className="counter-wrapper">
+                <div className="counter-wrapper change-number">
                     <div className="counter">
                         <h1 className="num" data-val="003">000</h1>
                         <p>PROJECT COMPLETED</p>
@@ -249,7 +292,7 @@ function Section1() {
                                                 <div className="feature_1im1 clearfix">
                                                     <div className="grid clearfix">
                                                         <figure className="effect-jazz mb-0">
-                                                            <a href="contact.html"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/ASHARAYWEB.png?alt=media&token=5e76962c-3b3b-484c-ad45-56c581bb0df7" className="w-100" alt="abc" /></a>
+                                                            <a href="contact.html"><img src={sectionimg2} className="w-100" alt="abc" /></a>
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -265,7 +308,7 @@ function Section1() {
                                                 <div className="feature_1im1 clearfix">
                                                     <div className="grid clearfix">
                                                         <figure className="effect-jazz mb-0">
-                                                            <a href="contact.html"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/BUSSINESS.png?alt=media&token=ad0ff7c6-0bff-432a-be89-2399d78cb079" className="w-100" alt="abc" /></a>
+                                                            <a href="contact.html"><img src={sectionimg3} className="w-100" alt="abc" /></a>
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -281,7 +324,7 @@ function Section1() {
                                                 <div className="feature_1im1 clearfix">
                                                     <div className="grid clearfix">
                                                         <figure className="effect-jazz mb-0">
-                                                            <a href="contact.html"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/ASHRAY.png?alt=media&token=a6e84776-bc7e-4897-a4df-42d81828e743" className="w-100" alt="abc" /></a>
+                                                            <a href="contact.html"><img src={sectionimg4} className="w-100" alt="abc" /></a>
                                                         </figure>
                                                     </div>
                                                 </div>
@@ -316,7 +359,7 @@ function Section1() {
                                 <div className="process_1i1 text-center">
                                     <div className="grid clearfix">
                                         <figure className="effect-jazz mb-0">
-                                            <img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/1w.png?alt=media&token=74300da3-3001-4435-baa3-be63d8fc6860" className="rounded-circle" alt="abc" style={{ cursor: 'default' }} />
+                                            <img src={sectionimg5} className="rounded-circle" alt="abc" style={{ cursor: 'default' }} />
                                         </figure>
                                     </div>
                                 </div>
@@ -335,7 +378,7 @@ function Section1() {
                                 <div className="process_1i1 text-center">
                                     <div className="grid clearfix">
                                         <figure className="effect-jazz mb-0">
-                                            <a href="#"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/2w.png?alt=media&token=012c4304-72a0-45c1-8a3e-f569516bc3bb" className="rounded-circle" alt="abc" style={{ cursor: 'default' }} /></a>
+                                            <a href="#"><img src={sectionimg6} className="rounded-circle" alt="abc" style={{ cursor: 'default' }} /></a>
                                         </figure>
                                     </div>
                                 </div>
@@ -354,7 +397,7 @@ function Section1() {
                                 <div className="process_1i1 text-center">
                                     <div className="grid clearfix">
                                         <figure className="effect-jazz mb-0">
-                                            <a href="#"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/3w.png?alt=media&token=c6742860-7afd-4824-a905-d30890cd4c29" className="rounded-circle" alt="abc" style={{ cursor: 'default' }} /></a>
+                                            <a href="#"><img src={sectionimg7} className="rounded-circle" alt="abc" style={{ cursor: 'default' }} /></a>
                                         </figure>
                                     </div>
                                 </div>
@@ -373,7 +416,7 @@ function Section1() {
                                 <div className="process_1i1 text-center">
                                     <div className="grid clearfix">
                                         <figure className="effect-jazz mb-0">
-                                            <a href="#"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/4w.png?alt=media&token=c0edf0f2-4295-4854-ae7a-635497ec9f84" className="rounded-circle" alt="abc" style={{ cursor: 'default' }} /></a>
+                                            <a href="#"><img src={sectionimg8} className="rounded-circle" alt="abc" style={{ cursor: 'default' }} /></a>
                                         </figure>
                                     </div>
                                 </div>
@@ -419,7 +462,7 @@ function Section1() {
                                                     <FontAwesomeIcon icon={faStar} style={{ color: '#e7b343' }} />
                                                     <FontAwesomeIcon icon={faStar} style={{ color: '#e7b343' }} />
                                                 </span>
-                                                <img className="rounded-circle" src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/ceo.png?alt=media&token=b4ba049e-4904-4ebf-adc6-95aea878d081" alt="abc" />
+                                                <img className="rounded-circle" src={sectionimg9} alt="abc" />
                                                 <span style={{ fontSize: '60px' }} className="d-block color_1 mt-2"><FontAwesomeIcon icon={faQuoteLeft} /></span>
                                                 <p className="mt-1">VR1 IT Solutions Pvt Ltd has been an invaluable partner for our organization. Their expertise in providing top-notch IT and non-IT manpower solutions has significantly contributed to our business growth. Their commitment to excellence and professionalism is truly commendable.</p>
                                                 <h5>SUSHANTH</h5>
@@ -434,7 +477,7 @@ function Section1() {
                                                     <FontAwesomeIcon icon={faStar} style={{ color: '#e7b343' }} />
                                                     <FontAwesomeIcon icon={faStar} style={{ color: '#e7b343' }} />
                                                 </span>
-                                                <img className="rounded-circle" src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/ameli.png?alt=media&token=a8f99c06-9881-439a-8f65-947b1883de70" alt="abc" />
+                                                <img className="rounded-circle" src={sectionimg10} alt="abc" />
                                                 <span style={{ fontSize: '60px' }} className="d-block color_1 mt-2"><FontAwesomeIcon icon={faQuoteLeft} /></span>
                                                 <p className="mt-1">We have had the pleasure of collaborating with VR1 IT Solutions Pvt Ltd for our training and placement needs. Their team's dedication and industry knowledge have made a positive impact on our workforce development initiatives.</p>
                                                 <h5>Amelia</h5>
@@ -455,7 +498,7 @@ function Section1() {
                                                     <FontAwesomeIcon icon={faStar} style={{ color: '#e7b343' }} />
                                                     <FontAwesomeIcon icon={faStar} style={{ color: '#e7b343' }} />
                                                 </span>
-                                                <img className="rounded-circle" src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/manager.png?alt=media&token=29d3adce-aa41-4627-8f03-464b6f2f12e3" alt="abc" />
+                                                <img className="rounded-circle" src={sectionimg11} alt="abc" />
                                                 <span style={{ fontSize: '60px' }} className="d-block color_1 mt-2"><FontAwesomeIcon icon={faQuoteLeft} /></span>
                                                 <p className="mt-1">VR1 IT Solutions Pvt Ltd has been instrumental in our talent acquisition strategy. Their ability to source and train skilled professionals for our IT projects has been exceptional. We are extremely satisfied with the quality of service they have provided.</p>
                                                 <h5>Samir Kund</h5>
@@ -471,7 +514,7 @@ function Section1() {
                                                     <FontAwesomeIcon icon={faStar} style={{ color: '#e7b343' }} />
                                                     <FontAwesomeIcon icon={faStar} style={{ color: '#e7b343' }} />
                                                 </span>
-                                                <img className="rounded-circle" src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/executive.png?alt=media&token=a219218e-df17-4599-8b68-8de43ef6b6d1" alt="abc" />
+                                                <img className="rounded-circle" src={sectionimg12} alt="abc" />
                                                 <span style={{ fontSize: '60px' }} className="d-block color_1 mt-2"><FontAwesomeIcon icon={faQuoteLeft} /></span>
                                                 <p className="mt-1">We are delighted with the partnership we have with VR1 IT Solutions Pvt Ltd. Their commitment to understanding our specific requirements and delivering tailor-made solutions has been outstanding. Their support in our skill development programs has been invaluable.</p>
                                                 <h5>Prasanth Reddy</h5>
@@ -491,7 +534,7 @@ function Section1() {
                                                     <FontAwesomeIcon icon={faStar} style={{ color: '#e7b343' }} />
                                                     <FontAwesomeIcon icon={faStar} style={{ color: '#e7b343' }} />
                                                 </span>
-                                                <img className="rounded-circle" src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/doctor.png?alt=media&token=df8ed9bb-7610-45eb-9136-4bd47a4ecab1" alt="abc" />
+                                                <img className="rounded-circle" src={sectionimg13} alt="abc" />
                                                 <span style={{ fontSize: '60px' }} className="d-block color_1 mt-2"><FontAwesomeIcon icon={faQuoteLeft} /></span>
                                                 <p className="mt-1">Working with VR1 IT Solutions Pvt Ltd has been a game-changer for our organization. Their collaborative approach, attention to detail, and proactive communication have set them apart. We are grateful for the positive impact they have made on our business operations.</p>
                                                 <h5>Divyasha</h5>
@@ -506,7 +549,7 @@ function Section1() {
                                                     <FontAwesomeIcon icon={faStar} style={{ color: '#e7b343' }} />
                                                     <FontAwesomeIcon icon={faStar} style={{ color: '#e7b343' }} />
                                                 </span>
-                                                <img className="rounded-circle" src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/enternerper.png?alt=media&token=b6928acd-5f7c-4dfe-98c1-3f3fc362fb21" alt="abc" />
+                                                <img className="rounded-circle" src={sectionimg14} alt="abc" />
                                                 <span style={{ fontSize: '60px' }} className="d-block color_1 mt-2"><FontAwesomeIcon icon={faQuoteLeft} /></span>
                                                 <p className="mt-1">We have had the pleasure of collaborating with VR1 IT Solutions Pvt Ltd for our training and placement needs. Their team's dedication and industry knowledge have made a positive impact on our workforce development initiatives. We highly recommend their services.</p>
                                                 <h5>Dhiray Jain</h5>
@@ -525,14 +568,14 @@ function Section1() {
                 <div className="container">
                     <h2 className="text-center font-weight-bold" style={{ textAlign: 'center', padding: '20px' }}>Our Partners & Clients</h2>
                     <section className="customer-logos slider">
-                        <div className="slide"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/iib.jpeg?alt=media&token=5630e562-be82-4f4c-a8db-b6a2ce39a3c4" alt="logo" /></div>
-                        <div className="slide"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/nsdc.e85a94edc4741c94925b.jpeg?alt=media&token=34060f99-e35d-4094-9749-d4ed7b2c444b" alt="logo" /></div>
-                        <div className="slide"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/ashraylogo.png?alt=media&token=1faa1182-ed61-469c-9613-f5e1410f90c0" alt="logo" /></div>
-                        <div className="slide"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/india.a0e2cdeda72031ee2b35.png?alt=media&token=2903e1c4-f3df-4214-934b-186ddac7a41f" alt="logo" /></div>
-                        <div className="slide"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/bizsharp.png?alt=media&token=34ba3a5d-379c-44cb-9b73-2c4d229f0e96" alt="logo" /></div>
-                        <div className="slide"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/iib.jpeg?alt=media&token=5630e562-be82-4f4c-a8db-b6a2ce39a3c4" alt="logo" /></div>
-                        <div className="slide"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/nsdc.e85a94edc4741c94925b.jpeg?alt=media&token=34060f99-e35d-4094-9749-d4ed7b2c444b" alt="logo" /></div>
-                        <div className="slide"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/india.a0e2cdeda72031ee2b35.png?alt=media&token=2903e1c4-f3df-4214-934b-186ddac7a41f" alt="logo" /></div>
+                        <div className="slide"><img src={sectionimg15} alt="logo" /></div>
+                        <div className="slide"><img src={sectionimg16} alt="logo" /></div>
+                        <div className="slide"><img src={sectionimg17} alt="logo" /></div>
+                        <div className="slide"><img src={sectionimg18} alt="logo" /></div>
+                        <div className="slide"><img src={sectionimg19} alt="logo" /></div>
+                        <div className="slide"><img src={sectionimg15} alt="logo" /></div>
+                        <div className="slide"><img src={sectionimg16} alt="logo" /></div>
+                        <div className="slide"><img src={sectionimg18} alt="logo" /></div>
                     </section>
                 </div>
             </section>
@@ -558,7 +601,7 @@ function Section1() {
                                         <figure className="effect-jazz mb-0">
                                             <a href="blog.html">
                                                 <img
-                                                    src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/b1.png?alt=media&token=49fe9581-22f5-4f7f-92be-49a2d15507da"
+                                                    src={sectionimg20}
                                                     className="w-100"
                                                     alt="abc"
                                                 />
@@ -604,7 +647,7 @@ function Section1() {
                                 <div className="blog_h1i clearfix">
                                     <div className="grid clearfix">
                                         <figure className="effect-jazz mb-0">
-                                            <a href="blog.html"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/b2.png?alt=media&token=db8b0020-358a-4ac3-b7c8-c4de6169fcfe" className="w-100" alt="abc" /></a>
+                                            <a href="blog.html"><img src={sectionimg21} className="w-100" alt="abc" /></a>
                                         </figure>
                                     </div>
                                 </div>
@@ -631,7 +674,7 @@ function Section1() {
                                 <div className="blog_h1i clearfix">
                                     <div className="grid clearfix">
                                         <figure className="effect-jazz mb-0">
-                                            <a href="blog.html"><img src="https://firebasestorage.googleapis.com/v0/b/vr1site.appspot.com/o/b3.png?alt=media&token=61440783-eda9-4239-88f4-f8a4cf87b36d" className="w-100" alt="abc" /></a>
+                                            <a href="blog.html"><img src={sectionimg22} className="w-100" alt="abc" /></a>
                                         </figure>
                                     </div>
                                 </div>
